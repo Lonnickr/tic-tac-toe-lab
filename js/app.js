@@ -19,7 +19,7 @@ let board, turn, winner, tie
 /*------------------------ Cached Element References ------------------------*/
 const squareEl = document.querySelectorAll(".sqr")
 const messageEl = document.getElementById('message')
-
+const resetBtnEl = document.getElementById('reset')
 
 
 /*-------------------------------- Functions --------------------------------*/
@@ -116,4 +116,5 @@ squareEl.forEach((squareEl) => {
     squareEl.addEventListener("click", handleClick)
 })
 
+resetBtnEl.addEventListener("click", init)
 
