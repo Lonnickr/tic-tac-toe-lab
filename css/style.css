@@ -3,19 +3,43 @@ body {
     /* Use a system font, if none are available use an available sans-sarif */
     font-family: system-ui, sans-serif;
     margin: 0;
+    color: #77ACA2;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
   .board {
     display: flex;
     flex-wrap: wrap;
     width: 325px;
+    align-items: center;
   }
   
   .sqr {
     width: 30%;
     aspect-ratio: 1/1;
     border: 3px solid black;
+    background-color:lightcyan;
     font-size: 64px;
     text-align: center;
+    border-radius: 8px;
   }
   
+  h1 {
+    margin-bottom: 0px;
+  }
+
+  button {
+    margin-top: 20px;
+    border: none;
+    width: 100px;
+    height: 35px;
+    color: #77ACA2;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: system-ui, sans-serif;
+    border-radius: 8px;
+}

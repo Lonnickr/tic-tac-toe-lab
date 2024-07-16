@@ -10,6 +10,7 @@ const winningCoombos = [
     [0, 4, 8],
     [2, 4, 8],
 ]
+const gameOverSound = new Audio("../assets/gameover.wav")
 
 
 /*---------------------------- Variables (state) ----------------------------*/
@@ -40,11 +41,15 @@ function render() {
 function updateBoard() {
     board.forEach((cell, idx) => {
         if (cell === "X"){
+        squareEl[idx].classList.add('animate_animated', "abimate_flipInY")    
         squareEl[idx].textContent = "X"
+        squareEl[idx].style.backgroundColor = "#468189"
         } else if (cell === "O" ) {
         squareEl[idx].textContent = "O"
+         squareEl[idx].style.backgroundColor = "#F4E9CD"
         } else {
         squareEl[idx].textContent = ""
+         squareEl[idx].style.backgroundColor = "white"
         }
         
     })
